@@ -18,7 +18,11 @@ module.exports = {
         filename: 'index.js'
     },
     resolve: {
-        extensions: ['.jsx', '.js', '.css', '.json']
+        extensions: ['.jsx', '.js', '.css', '.json'],
+        modules: [
+          path.resolve(__dirname, 'src'),
+          path.resolve(__dirname, 'node_modules')
+        ]
     },
     context: __dirname,
     module: {
@@ -38,16 +42,6 @@ module.exports = {
         ]
     },
     plugins: [
-      // new webpack.LoaderOptionsPlugin({
-      //   options: {
-      //     postcss: [
-      //       postcssImport({
-      //         addDependencyTo: webpack,
-      //       }),
-      //       postcssCssNext(),
-      //     ],
-      //   },
-      // }),
       new ExtractTextPlugin("styles.css"),
       new HtmlWebpackPlugin({
             title: 'Fantasy Dota 2',
