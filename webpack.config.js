@@ -50,7 +50,7 @@ module.exports = {
       // }),
       new ExtractTextPlugin("styles.css"),
       new HtmlWebpackPlugin({
-            title: 'Fantasy Dota',
+            title: 'Fantasy Dota 2',
             filename: 'index.html'
         }),
       new webpack.DefinePlugin({
