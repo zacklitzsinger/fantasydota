@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import {Route, BrowserRouter} from 'react-router-dom';
+
 import App from './App';
 
 if (document.getElementById('root') === null){
@@ -8,6 +10,8 @@ if (document.getElementById('root') === null){
 }
 
 ReactDOM.render(
-    <App />,
+    <BrowserRouter>
+      <Route component={App}/>
+    </BrowserRouter>,
     document.getElementById('root')
 );
