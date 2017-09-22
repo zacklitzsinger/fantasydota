@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
 
-.container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
 :global(#root) {
   height: 100%;
 }

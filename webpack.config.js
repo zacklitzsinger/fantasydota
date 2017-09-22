@@ -4,8 +4,6 @@ const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const postcssImport = require('postcss-import');
-const postcssCssNext = require('postcss-cssnext');
 
 module.exports = {
     entry: [
@@ -42,7 +40,7 @@ module.exports = {
         ]
     },
     plugins: [
-      new ExtractTextPlugin("styles.css"),
+      new ExtractTextPlugin('styles.css'),
       new HtmlWebpackPlugin({
             title: 'Fantasy Dota 2',
             filename: 'index.html'

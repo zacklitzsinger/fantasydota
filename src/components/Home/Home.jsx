@@ -1,8 +1,9 @@
-import React, {Component, PropTypes} from 'react';
+import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 
 import Paper from 'material-ui/Paper';
 
-export default class Home extends Component {
+class Home extends Component {
   render() {
     const {children} = this.props;
     return (
@@ -13,3 +14,9 @@ export default class Home extends Component {
     );
   }
 }
+
+Home.propTypes = {
+  children: PropTypes.node
+};
+
+export default Home;
