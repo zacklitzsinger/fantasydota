@@ -2,18 +2,19 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 
+import {Card, CardHeader} from 'material-ui/Card';
 import Paper from 'material-ui/Paper';
 
 class Team extends Component {
   render() {
     const {name, icon} = this.props;
     return (
-      <Paper>
-        <h3>{name}</h3>
+      <Card>
+        <CardHeader>{name}</CardHeader>
         <Paper zDepth={3}>
           <img src={icon} width={100} height={100}/>
         </Paper>
-      </Paper>
+      </Card>
     );
   }
 }
