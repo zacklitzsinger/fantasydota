@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 
 import {Card, CardHeader} from 'material-ui/Card';
-import Paper from 'material-ui/Paper';
+import Avatar from 'material-ui/Avatar';
 
 class Team extends Component {
   render() {
@@ -11,9 +11,7 @@ class Team extends Component {
     return (
       <Card>
         <CardHeader>{name}</CardHeader>
-        <Paper zDepth={3}>
-          <img src={icon} width={100} height={100}/>
-        </Paper>
+        <Avatar src={icon} size={100}/>
       </Card>
     );
   }

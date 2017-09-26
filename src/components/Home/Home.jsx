@@ -1,23 +1,16 @@
 import React, {Component} from 'react';
-import PropTypes from 'prop-types';
 
-import Paper from 'material-ui/Paper';
+import {Card, CardHeader, CardText} from 'material-ui/Card';
 
 class Home extends Component {
   render() {
-    const {children} = this.props;
     return (
-      <Paper>
-        <h2>Home page</h2>
-        Fantasy Dota 2 demo site
-        {children}
-      </Paper>
+      <Card>
+        <CardHeader>Home</CardHeader>
+        <CardText>Fantasy Dota 2 demo site</CardText>
+      </Card>
     );
   }
 }
-
-Home.propTypes = {
-  children: PropTypes.node
-};
 
 export default Home;
