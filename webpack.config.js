@@ -39,6 +39,12 @@ module.exports = {
             }
         ]
     },
+    devServer: {
+      contentBase: __dirname,
+      disableHostCheck: true,
+      historyApiFallback: true,
+      compress: true,
+    },
     plugins: [
       new ExtractTextPlugin('styles.css'),
       new HtmlWebpackPlugin({

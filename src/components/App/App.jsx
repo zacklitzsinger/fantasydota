@@ -3,6 +3,8 @@ import styles from './App.css';
 
 import Header from 'components/Header';
 import Home from 'components/Home';
+import Teams from 'components/Teams';
+import Team from 'components/Team';
 import Footer from 'components/Footer';
 
 import {Route} from 'react-router-dom';
@@ -18,6 +20,8 @@ export default class App extends Component {
         <div className={styles.container}>
           <Header/>
           <Route exact path='/' component={Home}/>
+          <Route exact path='/teams' component={Teams}/>
+          <Route exact path='/teams/:id' component={Team}/>
           <Footer/>
         </div>
       </MuiThemeProvider>

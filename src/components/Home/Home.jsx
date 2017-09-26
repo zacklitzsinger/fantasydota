@@ -8,7 +8,8 @@ class Home extends Component {
     const {children} = this.props;
     return (
       <Paper>
-        Home page
+        <h2>Home page</h2>
+        Fantasy Dota 2 demo site
         {children}
       </Paper>
     );

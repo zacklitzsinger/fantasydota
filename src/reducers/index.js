@@ -1,3 +1,9 @@
 import { combineReducers } from 'redux';
 
-export default combineReducers({});
+import teams from 'reducers/teamsReducer';
+import teamInfo from 'reducers/teamInfoReducer';
+
+export default combineReducers({
+  teams,
+  teamInfo
+});
