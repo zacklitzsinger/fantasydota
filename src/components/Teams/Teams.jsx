@@ -13,7 +13,7 @@ class Teams extends Component {
     const {teams = []} = this.props;
     const teamContent = teams.map((team) =>
       <ListItem key={team.id}
-        leftAvatar={<Avatar src={team.icon}/>}
+        leftAvatar={<Avatar backgroundColor='white' src={team.icon}/>}
         primaryText={team.name}
         containerElement={<Link to={'/teams/'+team.id}>{team.name}</Link>}
       />
