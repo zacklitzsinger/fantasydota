@@ -13,12 +13,14 @@ module.exports = {
     devtool: 'eval-source-map',
     output: {
         path: path.join(__dirname, '/build'),
+        publicPath: '/',
         filename: 'index.js'
     },
     resolve: {
         extensions: ['.jsx', '.js', '.css', '.json'],
         modules: [
           path.resolve(__dirname, 'src'),
+          path.resolve(__dirname, 'content'),
           path.resolve(__dirname, 'node_modules')
         ]
     },

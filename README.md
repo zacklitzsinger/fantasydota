@@ -16,10 +16,10 @@ A site for competing in Fantasy Dota across the 2017-2018 season against players
 
 ## Stack
 
-- *React* for view
-- *Redux* for managing model on client
-- *PostCSS* for modernizing css
-- *Babel* for utilizing ES6
-- *ESList* for linting (providing consistency in code style)
-- *Webpack* for bundling everything together
-- *Material UI* component library for ui design
+- **React** for view
+- **Redux** for managing model on client
+- **PostCSS** for modernizing css
+- **Babel** for utilizing ES6
+- **ESList** for linting (providing consistency in code style)
+- **Webpack** for bundling everything together
+- **Material UI** component library for ui design

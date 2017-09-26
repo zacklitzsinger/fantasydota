@@ -1,4 +1,4 @@
-// Teams will contain the general team information (primary id and name
+// Teams will contain the general team information (primary id and name)
 // as well as an icon
 
 const initialState = [
