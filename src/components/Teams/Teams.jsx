@@ -11,8 +11,8 @@ import {Card, CardHeader} from 'material-ui/Card';
 class Teams extends Component {
   render() {
     const {teams = []} = this.props;
-    const teamContent = teams.map((team) =>
-      <ListItem key={team.id}
+    const teamContent = teams.map((team, i) =>
+      <ListItem key={i}
         leftAvatar={<Avatar backgroundColor='white' src={team.icon}/>}
         primaryText={team.name}
         containerElement={<Link to={'/teams/'+team.id}>{team.name}</Link>}
@@ -34,7 +34,7 @@ Teams.propTypes = {
 };
 
 const mapStateToProps = state => ({
-  teams: state.teams
+  teams: state.teams.ids.map((id) => { return state.teams.entities[id]; })
 });
 
 export default connect(mapStateToProps, null)(Teams);

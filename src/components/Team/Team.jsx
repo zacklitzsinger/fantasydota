@@ -27,9 +27,9 @@ Team.propTypes = {
 };
 
 const mapStateToProps = (state, ownProps) => ({
-  name: state.teamInfo[ownProps.match.params.id].name,
-  icon: state.teamInfo[ownProps.match.params.id].icon,
-  players: state.teamInfo[ownProps.match.params.id].players
+  name: state.teams.entities[ownProps.match.params.id].name,
+  icon: state.teams.entities[ownProps.match.params.id].icon,
+  players: state.teams.entities[ownProps.match.params.id].players
 });
 
 export default connect(mapStateToProps, null)(Team);

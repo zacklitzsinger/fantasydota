@@ -1,10 +1,20 @@
-// Teams will contain the general team information (primary id and name)
-// as well as an icon
-
-const initialState = [
-  {id: 1, name: 'Fnatic', icon: '/img/Fnatic.png'},
-  {id: 2, name: 'Team Liquid', icon: '/img/TeamLiquid.jpg'}
-];
+const initialState = {
+  ids: [1, 2],
+  entities: {
+    1: {
+      id: 1,
+      name: 'Team Phoenix',
+      icon: '/img/TeamPhoenix.png',
+      players: [1, 2]
+    },
+    2: {
+      id: 2,
+      name: 'Team Underlord',
+      icon: '/img/TeamUnderlord.png',
+      players: [3, 4]
+    }
+  }
+};
 
 export default (state = initialState) => {
   return state;

@@ -16,7 +16,7 @@ class PlayerList extends Component {
         >
           <TableRow>
             <TableHeaderColumn>Name</TableHeaderColumn>
-            <TableHeaderColumn>Team</TableHeaderColumn>
+            <TableHeaderColumn>Organization</TableHeaderColumn>
             <TableHeaderColumn>Position</TableHeaderColumn>
             <TableHeaderColumn>Points</TableHeaderColumn>
           </TableRow>

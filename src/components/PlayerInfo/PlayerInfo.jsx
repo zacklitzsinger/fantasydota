@@ -26,10 +26,10 @@ PlayerInfo.propTypes = {
 };
 
 const mapStateToProps = (state, ownProps) => ({
-  name: state.players[ownProps.match.params.id].name,
-  team: state.players[ownProps.match.params.id].team,
-  position: state.players[ownProps.match.params.id].position,
-  points: state.players[ownProps.match.params.id].points,
+  name: state.players.entities[ownProps.match.params.id].name,
+  team: state.players.entities[ownProps.match.params.id].team,
+  position: state.players.entities[ownProps.match.params.id].position,
+  points: state.players.entities[ownProps.match.params.id].points,
 });
 
 export default connect(mapStateToProps, null)(PlayerInfo);
