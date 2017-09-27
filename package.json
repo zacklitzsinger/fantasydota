@@ -10,10 +10,15 @@
     "start": "webpack-dev-server --hot"
   },
   "author": "zelitzsi",
-  "license": "ISC",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/zelitzsi/fantasydota"
+  },
   "dependencies": {
     "express": "^4.15.4",
     "lodash": "^4.17.4",
+    "material-ui": "^0.19.2",
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",

@@ -4,7 +4,7 @@ A site for competing in Fantasy Dota across the 2017-2018 season against players
 ## Setup
 - Install Node.js 7.0 or above. `nvm` is a good tool to manage Node versions
 - `npm install`
-- `npm start`
+- `npm run start`
 - See `http://localhost:8080` for site
 
 ## Optional recommended dev environment
